@@ -1,3 +1,4 @@
+
 // importation des package
 const express = require("express");
 const mongoose = require("mongoose");
@@ -10,9 +11,7 @@ const userRoutes = require("./routes/user");
 const app = express();
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/piquante", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+  .connect(process.env.mongo_URI, {
   })
   .then(() => console.log("Connected to local MongoDB ✔"))
   .catch((err) => console.log("MongoDB connection error ❌", err));
