@@ -1,1 +1,6 @@
-*.DS_Store
+node_modules/
+front/node_modules/
+back/node_modules/
+.env
+.env.*
+back/.env
