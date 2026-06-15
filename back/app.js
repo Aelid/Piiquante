@@ -11,8 +11,7 @@ const userRoutes = require("./routes/user");
 const app = express();
 
 mongoose
-  .connect(process.env.mongo_URI, {
-  })
+  .connect(process.env.mongo_URI) 
   .then(() => console.log("Connected to local MongoDB ✔"))
   .catch((err) => console.log("MongoDB connection error ❌", err));
 
