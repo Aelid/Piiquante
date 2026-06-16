@@ -1,19 +1,84 @@
-HOT TAKES
-Installation
-Here are the dependancies you need to install:
+# 🌶️ Piiquante
 
-NodeJS 12.14 or 14.0.
-Angular CLI 7.0.2.
-node-sass : make sure to use the corresponding version to NodeJS. For Noe 14.0 for instance, you need node-sass in version 4.14+.
-On Windows, these installations require to use PowerShell in administrator mode.
+Application web développée avec Angular, Node.js, Express et MongoDB permettant aux utilisateurs de créer un compte, s'authentifier et partager des sauces avec upload d'images.
 
-Then, clone this repo, run npm install, and run npm install --save-dev run-script-os.
+## 🚀 Fonctionnalités
 
-Usage
-Run npm start. This should both run the local server and launch your browser.
+- Authentification sécurisée (JWT)
+- Création et connexion des utilisateurs
+- Hashage des mots de passe avec bcrypt
+- CRUD complet des sauces
+- Upload et gestion d'images
+- API REST Express.js
+- Base de données MongoDB Atlas
+- Stockage persistant des données
 
-If your browser fails to launch, or shows a 404 error, navigate your browser to http://localhost:8080.
+## 🛠️ Technologies
 
-The app should reload automatically when you make a change to a file.
+### Frontend
 
-Use Ctrl+C in the terminal to stop the local server.
+- Angular
+- HTML5
+- CSS3
+- TypeScript
+
+### Backend
+
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- JWT
+- bcrypt
+- Multer
+
+## 📂 Structure du projet
+
+```
+Piquantee-main/
+├── back/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   └── server.js
+│
+└── front/
+    ├── assets/
+    ├── index.html
+    └── ...
+```
+
+## 💻 Installation
+
+### Backend
+
+```bash
+cd back
+npm install
+npm start
+```
+
+### Frontend
+
+```bash
+cd front
+npm install
+npm start
+```
+
+## 🔐 Variables d'environnement
+
+Créer un fichier `.env` dans le dossier `back` :
+
+```env
+MONGO_URI=your_mongodb_connection_string
+```
+
+## 📸 Aperçu
+
+Le projet permet aux utilisateurs de créer un compte, se connecter, publier des sauces avec image, modifier ou supprimer leurs propres publications et consulter celles des autres utilisateurs.
+
+## 👨‍💻 Auteur
+
+Luigi Behal
